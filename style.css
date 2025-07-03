@@ -1,0 +1,53 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    background-color: #fadadd;
+    color: #333;
+}
+
+#heading h2 {
+    margin-bottom: 10px;
+      
+}
+.mansalva-regular {
+    font-family: "Mansalva", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+#puzzle-block {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 4px;
+    margin: 20px auto;
+    width: 312px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+.piece {
+    width: 100px;
+    height: 100px;
+    background-size: 300px 300px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+.piece:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.piece.selected {
+    border: 2px solid #ff5722;
+    box-shadow: 0 0 10px rgba(255,87,34,0.7);
+}
+
